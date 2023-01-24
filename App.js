@@ -1,9 +1,14 @@
 import React from "react";
 import ReactDOM from 'react-dom'
-import './index.css'
-// const heading =React.createElement('h1',{id:"maindiv"},'hello world')
-                         //Both are same
-const heading=<h1 id="maindiv">Hello world</h1>
-console.log(heading)
-const root=ReactDOM.createRoot(document.getElementById('root'))
-root.render(heading)
+const Headig =()=> <h1>Hello</h1>
+const FunctionalComponents =()=>{
+    return(<>
+    <Headig/>
+        <h1>Home </h1>
+        <h2>Heading 2</h2>
+        <h3>Headig 3</h3>
+    </>)
+}
+const root = ReactDOM.createRoot(document.getElementById('root'))
+root.render(<FunctionalComponents/>)
+ 
